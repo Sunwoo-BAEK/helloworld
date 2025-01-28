@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>ToDO Items page</h1>
+{% for todo in ToDoItemDetail %}
+    <ul>
+        <li>{{todo.todolist.name}}</li>
+    </ul>
+{% endfor %}
+{% endblock content %}
